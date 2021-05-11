@@ -13,7 +13,6 @@ import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 public class HomeActivity extends AppCompatActivity {
     private ChipNavigationBar chipNavigationBar;
     private Fragment fragment=null;
-    private ImageButton  h_comedy, h_family, h_romance, h_animation, h_horror, h_action;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,55 +47,7 @@ public class HomeActivity extends AppCompatActivity {
 
 
 
-        h_comedy = findViewById(R.id.h_comedy);
-        h_family = findViewById(R.id.h_family);
-        h_romance = findViewById(R.id.h_romance);
-        h_animation = findViewById(R.id.h_animation);
-        h_horror = findViewById(R.id.h_horror);
-        h_action = findViewById(R.id.h_action);
 
-        h_comedy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this, HomeComedy.class));
-
-            }
-        });
-        h_family.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this, HomeFamily.class));
-
-            }
-        });
-        h_romance.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this, HomeRomance.class));
-
-            }
-        });
-        h_animation.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this, HomeAnimation.class));
-
-            }
-        });
-        h_horror.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this, HomeHorror.class));
-
-            }
-        });
-        h_action.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this, HomeAction.class));
-
-            }
-        });
 
 
 

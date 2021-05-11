@@ -23,50 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/chipNavigation"
-        android:layout_marginBottom="0dp">
-
-        <ImageButton
-            android:id="@+id/h_animation"
-            android:layout_width="164dp"
-            android:layout_height="251dp"
-            android:backgroundTint="@color/cream"
-            app:srcCompat="@drawable/animation" />
-
-        <ImageButton
-            android:id="@+id/h_action"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/cream"
-            app:srcCompat="@drawable/action" />
-
-        <ImageButton
-            android:id="@+id/h_horror"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/cream"
-            app:srcCompat="@drawable/horror" />
-
-        <ImageButton
-            android:id="@+id/h_romance"
-            android:layout_width="183dp"
-            android:layout_height="153dp"
-            android:backgroundTint="@color/cream"
-            app:srcCompat="@drawable/romance" />
-
-        <ImageButton
-            android:id="@+id/h_family"
-            android:layout_width="162dp"
-            android:layout_height="195dp"
-            android:backgroundTint="@color/cardview_shadow_end_color"
-            app:srcCompat="@drawable/family" />
-
-        <ImageButton
-            android:id="@+id/h_comedy"
-            android:layout_width="179dp"
-            android:layout_height="155dp"
-            android:backgroundTint="@color/cream"
-            app:srcCompat="@drawable/comedy" />
-    </FrameLayout>
+        android:layout_marginBottom="0dp"/>
 
 
 </RelativeLayout>
