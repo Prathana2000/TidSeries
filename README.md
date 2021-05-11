@@ -1,0 +1,2 @@
+# TidSeries
+Android Project Java
