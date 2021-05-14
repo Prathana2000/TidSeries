@@ -37,6 +37,9 @@ public class HomeActivity extends AppCompatActivity {
                     case R.id.us:
                         fragment=new usFragment();
                         break;
+                    case R.id.fav:
+                        fragment= new Fav_Fragment();
+                        break;
                 }
 
                 if (fragment!=null){

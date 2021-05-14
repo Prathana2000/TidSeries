@@ -19,6 +19,14 @@
         android:title="comu"/>
 
     <item
+        android:id="@+id/fav"
+        android:icon="@drawable/ic_fav"
+        app:cnb_backgroundColor="@color/colorPrimary"
+        app:cnb_iconColor="#ffffff"
+        app:cnb_textColor="#ffffff"
+        android:title="favorites"/>
+
+    <item
         android:id="@+id/us"
         android:icon="@drawable/ic_us"
         app:cnb_backgroundColor="@color/colorPrimary"
