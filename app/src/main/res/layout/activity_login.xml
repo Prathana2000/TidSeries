@@ -46,7 +46,9 @@
         android:hint="Username"
         android:inputType="textPersonName"
         android:padding="16dp"
+        android:textColor="@color/orage"
         android:textColorHint="@color/orage"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view6" />
@@ -65,7 +67,10 @@
         android:hint="password"
         android:inputType="textPersonName"
         android:padding="16dp"
+        android:password="true"
+        android:textColor="@color/orage"
         android:textColorHint="#F44336"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginusername" />

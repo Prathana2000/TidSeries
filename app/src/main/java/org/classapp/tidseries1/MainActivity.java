@@ -15,11 +15,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //hide ActionBar
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().hide();
-        }
-
         loginButton = findViewById(R.id.main_btn_login);
         signUpButton = findViewById(R.id.main_btn_signin);
 
