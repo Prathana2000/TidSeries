@@ -38,6 +38,17 @@ public class comuFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.comu_fragment, container, false);
+        return rootView;
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
         rateCount = getView().findViewById(R.id.rateCount);
         ratingBar = getView().findViewById(R.id.ratingBar);
@@ -76,20 +87,7 @@ public class comuFragment extends Fragment {
 
             }
         });
-        return rootView;
-
     }
-
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-
-
-
-
-    }
-
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
