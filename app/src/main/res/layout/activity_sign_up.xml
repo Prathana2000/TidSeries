@@ -26,7 +26,7 @@
         app:layout_constraintTop_toBottomOf="@+id/view1_signup" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/logo"
         android:layout_width="230dp"
         android:layout_height="190dp"
         android:layout_marginTop="4dp"

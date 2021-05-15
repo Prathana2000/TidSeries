@@ -2,8 +2,10 @@ package org.classapp.tidseries1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -14,26 +16,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        loginButton = findViewById(R.id.main_btn_login);
-        signUpButton = findViewById(R.id.main_btn_signin);
-
-        loginButton.setOnClickListener(new View.OnClickListener() {
+        //Splash Screen 2 seconds 
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
             @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this , LoginActivity.class));
+            public void run() {
+                startActivity(new Intent(MainActivity.this, LoginActivity.class));
                 finish();
             }
-        });
-
-        signUpButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, SignUpActivity.class));
-                finish();
-            }
-        });
-
+        }, 2000);
 
     }
 }

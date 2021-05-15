@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
@@ -14,10 +15,20 @@ public class LoginActivity extends AppCompatActivity {
     private EditText loginUsername , loginPassword;
     private ImageButton loginButton;
     private DataBaseHelper myDb;
+    private TextView signUpButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        signUpButton = findViewById(R.id.main_btn_signin);
+        signUpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, SignUpActivity.class));
+            }
+        });
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
