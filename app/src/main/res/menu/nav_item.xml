@@ -11,20 +11,12 @@
         android:title="Home"/>
 
     <item
-        android:id="@+id/comu"
-        android:icon="@drawable/ic_comu"
-        app:cnb_backgroundColor="@color/colorPrimary"
-        app:cnb_iconColor="#ffffff"
-        app:cnb_textColor="#ffffff"
-        android:title="comu"/>
-
-    <item
         android:id="@+id/fav"
         android:icon="@drawable/ic_fav"
         app:cnb_backgroundColor="@color/colorPrimary"
         app:cnb_iconColor="#ffffff"
         app:cnb_textColor="#ffffff"
-        android:title="favorites"/>
+        android:title="Favorites"/>
 
     <item
         android:id="@+id/us"
@@ -32,6 +24,6 @@
         app:cnb_backgroundColor="@color/colorPrimary"
         app:cnb_iconColor="#ffffff"
         app:cnb_textColor="#ffffff"
-        android:title="about us"/>
+        android:title="About us"/>
 
 </menu>

@@ -31,9 +31,6 @@ public class HomeActivity extends AppCompatActivity {
                     case R.id.home:
                         fragment=new HomeFragment();
                         break;
-                    case R.id.comu:
-                        fragment= new comuFragment();
-                        break;
                     case R.id.us:
                         fragment=new usFragment();
                         break;
