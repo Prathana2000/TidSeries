@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="6dp">
+
+    <ImageView
+        android:id="@+id/bg_nowplay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nowplay_bg" />
+
+
+    <ImageView
+        android:id="@+id/poster_nowplay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:scaleType="centerInside"
+        app:layout_constraintCircleRadius="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/bg_nowplay"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintStart_toStartOf="@+id/bg_nowplay"
+        app:layout_constraintTop_toBottomOf="@+id/title_nowplay"
+        app:srcCompat="@drawable/logotid" />
+
+    <ImageView
+        android:id="@+id/footer_nowplay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/nowplay_footer" />
+
+    <TextView
+        android:id="@+id/title_nowplay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center"
+        android:text="Title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/desc_nowplay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:lines="10"
+        android:maxLines="10"
+        android:scrollbars="vertical"
+        android:text="description"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/footer_nowplay"
+        app:layout_constraintEnd_toEndOf="@+id/title_nowplay"
+        app:layout_constraintStart_toStartOf="@+id/title_nowplay"
+        app:layout_constraintTop_toBottomOf="@+id/poster_nowplay" />
+</androidx.constraintlayout.widget.ConstraintLayout>
