@@ -11,12 +11,12 @@
         android:title="Home"/>
 
     <item
-        android:id="@+id/fav"
-        android:icon="@drawable/ic_fav"
+        android:id="@+id/now_playing"
+        android:icon="@drawable/ic_baseline_live_tv_24"
+        android:title="Now Playing"
         app:cnb_backgroundColor="@color/colorPrimary"
         app:cnb_iconColor="#ffffff"
-        app:cnb_textColor="#ffffff"
-        android:title="Favorites"/>
+        app:cnb_textColor="#ffffff" />
 
     <item
         android:id="@+id/us"

@@ -3,10 +3,7 @@ package org.classapp.tidseries1;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageButton;
 
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 
@@ -34,8 +31,8 @@ public class HomeActivity extends AppCompatActivity {
                     case R.id.us:
                         fragment=new usFragment();
                         break;
-                    case R.id.fav:
-                        fragment= new Fav_Fragment();
+                    case R.id.now_playing:
+                        fragment= new NowShowingFragment();
                         break;
                 }
 
