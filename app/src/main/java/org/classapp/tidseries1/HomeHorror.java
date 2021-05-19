@@ -43,7 +43,7 @@ public class HomeHorror extends AppCompatActivity {
     }
 
     private void fetchMovies() {
-        String url = "https://www.json-generator.com/api/json/get/bUGBtMmwGG?indent=2";
+        String url = "https://www.json-generator.com/api/json/get/bVFEzINZmG?indent=2";
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
 

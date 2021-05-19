@@ -44,7 +44,7 @@ public class HomeAnimation extends AppCompatActivity {
     }
 
     private void fetchMovies() {
-        String url = "https://www.json-generator.com/api/json/get/cfwCDTNJcO?indent=2";
+        String url = "https://www.json-generator.com/api/json/get/cghiDVzGMi?indent=2";
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
 
