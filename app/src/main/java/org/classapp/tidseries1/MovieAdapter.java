@@ -53,6 +53,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieHolder>
                 bundle.putString("title", movie.getTitle());
                 bundle.putString("overview", movie.getOverview());
                 bundle.putString("poster", movie.getPoster());
+                bundle.putString("trailer", movie.getTrailer());
                 bundle.putDouble("rating", movie.getRating());
 
                 intent.putExtras(bundle);

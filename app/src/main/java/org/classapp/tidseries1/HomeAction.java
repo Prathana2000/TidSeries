@@ -25,6 +25,7 @@ public class HomeAction extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RequestQueue requestQueue;
     private List<Movie> movieList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,22 +45,51 @@ public class HomeAction extends AppCompatActivity {
     }
 
     private void fetchMovies() {
-        String url = "https://www.json-generator.com/api/json/get/cwpgUJvBVe?indent=2";
+        String url = "https://www.json-generator.com/api/json/get/ceEWdRmaXm?indent=2";
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
 
             @Override
             public void onResponse(JSONArray response) {
 
-                for (int i = 0 ; i < response.length() ; i ++){
+                for (int i = 0; i < response.length(); i++) {
                     try {
-                        JSONObject jsonObject = response.getJSONObject(i);
-                        String title = jsonObject.getString("title");
-                        String overview = jsonObject.getString("overview");
-                        String poster = jsonObject.getString("poster");
-                        Double rating = jsonObject.getDouble("rating");
+                        String trailer, title, overview, poster;
+                        Double rating;
 
-                        Movie movie = new Movie(title, poster, overview, rating);
+                        JSONObject jsonObject = response.getJSONObject(i);
+
+                        if (jsonObject.has("title")) {
+                            title = jsonObject.getString("title");
+                        } else {
+                            title = "";
+                        }
+
+                        if (jsonObject.has("overview")) {
+                            overview = jsonObject.getString("overview");
+                        } else {
+                            overview = "";
+                        }
+
+                        if (jsonObject.has("poster")) {
+                            poster = jsonObject.getString("poster");
+                        } else {
+                            poster = "";
+                        }
+
+                        if (jsonObject.has("trailer")) {
+                            trailer = jsonObject.getString("trailer");
+                        } else {
+                            trailer = "";
+                        }
+
+                        if (jsonObject.has("rating")) {
+                            rating = jsonObject.getDouble("rating");
+                        } else {
+                            rating = 0.00;
+                        }
+
+                        Movie movie = new Movie(title, poster, overview, trailer, rating);
                         movieList.add(movie);
 
                     } catch (JSONException e) {

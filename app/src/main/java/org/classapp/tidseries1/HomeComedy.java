@@ -53,13 +53,42 @@ public class HomeComedy extends AppCompatActivity {
 
                 for (int i = 0 ; i < response.length() ; i ++){
                     try {
-                        JSONObject jsonObject = response.getJSONObject(i);
-                        String title = jsonObject.getString("title");
-                        String overview = jsonObject.getString("overview");
-                        String poster = jsonObject.getString("poster");
-                        Double rating = jsonObject.getDouble("rating");
+                        String trailer, title, overview, poster;
+                        Double rating;
 
-                        Movie movie = new Movie(title, poster, overview, rating);
+                        JSONObject jsonObject = response.getJSONObject(i);
+
+                        if (jsonObject.has("title")) {
+                            title = jsonObject.getString("title");
+                        } else {
+                            title = "";
+                        }
+
+                        if (jsonObject.has("overview")) {
+                            overview = jsonObject.getString("overview");
+                        } else {
+                            overview = "";
+                        }
+
+                        if (jsonObject.has("poster")) {
+                            poster = jsonObject.getString("poster");
+                        } else {
+                            poster = "";
+                        }
+
+                        if (jsonObject.has("trailer")) {
+                            trailer = jsonObject.getString("trailer");
+                        } else {
+                            trailer = "";
+                        }
+
+                        if (jsonObject.has("rating")) {
+                            rating = jsonObject.getDouble("rating");
+                        } else {
+                            rating = 0.00;
+                        }
+
+                        Movie movie = new Movie(title, poster, overview, trailer, rating);
                         movieList.add(movie);
 
                     } catch (JSONException e) {
