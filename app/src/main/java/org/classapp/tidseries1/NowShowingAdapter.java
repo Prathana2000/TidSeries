@@ -2,6 +2,7 @@ package org.classapp.tidseries1;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
@@ -47,24 +48,13 @@ public class NowShowingAdapter extends RecyclerView.Adapter<NowShowingAdapter.Mo
         String imgUrl = "https://image.tmdb.org/t/p/original" + movie.getPoster_path();
         Glide.with(context).load(imgUrl).into(holder.poster);
 
-//        holder.constraintLayout.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(context, DetailActivity.class);
-//
-//                Bundle bundle = new Bundle();
-//                bundle.putString("title", movie.getTitle());
-//                bundle.putString("overview", movie.getOverview());
-//                bundle.putString("poster", movie.getPoster());
-//                bundle.putDouble("rating", movie.getRating());
-//
-//                intent.putExtras(bundle);
-//
-//                context.startActivity(intent);
-//
-//
-//            }
-//        });
+        holder.news.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String newsUrl = "https://www.majorcineplex.com/search?searchkeyword=" + movie.getTitle() + "&searchtype=movie%7Cnews%7C";
+                context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(newsUrl)));
+            }
+        });
 
     }
 
@@ -75,13 +65,14 @@ public class NowShowingAdapter extends RecyclerView.Adapter<NowShowingAdapter.Mo
 
     public class MovieHolder extends RecyclerView.ViewHolder {
 
-        ImageView poster;
+        ImageView poster, news;
         TextView title, desc, rating;
         ConstraintLayout constraintLayout;
 
         public MovieHolder(@NonNull View itemView) {
             super((itemView));
 
+            news = itemView.findViewById(R.id.news_img);
             poster = itemView.findViewById(R.id.poster_nowplay);
             title = itemView.findViewById(R.id.title_nowplay);
             desc = itemView.findViewById(R.id.desc_nowplay);

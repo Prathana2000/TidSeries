@@ -23,9 +23,9 @@
         android:id="@+id/poster_nowplay"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="5dp"
+        android:layout_marginEnd="10dp"
         android:scaleType="centerInside"
         app:layout_constraintCircleRadius="20dp"
         app:layout_constraintEnd_toEndOf="@+id/bg_nowplay"
@@ -76,4 +76,15 @@
         app:layout_constraintEnd_toEndOf="@+id/title_nowplay"
         app:layout_constraintStart_toStartOf="@+id/title_nowplay"
         app:layout_constraintTop_toBottomOf="@+id/poster_nowplay" />
+
+    <ImageView
+        android:id="@+id/news_img"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="@+id/poster_nowplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.055"
+        app:srcCompat="@drawable/search_box" />
 </androidx.constraintlayout.widget.ConstraintLayout>
