@@ -34,6 +34,9 @@ public class HomeActivity extends AppCompatActivity {
                     case R.id.now_playing:
                         fragment= new NowShowingFragment();
                         break;
+                    case R.id.trailer:
+                        fragment= new Trailer_Fragment();
+                        break;
                 }
 
                 if (fragment!=null){

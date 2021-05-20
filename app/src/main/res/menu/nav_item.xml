@@ -19,6 +19,14 @@
         app:cnb_textColor="#ffffff" />
 
     <item
+        android:id="@+id/trailer"
+        android:icon="@drawable/ic_tl"
+        app:cnb_backgroundColor="@color/colorPrimary"
+        app:cnb_iconColor="#ffffff"
+        app:cnb_textColor="#ffffff"
+        android:title="Movie Trailer"/>
+
+    <item
         android:id="@+id/us"
         android:icon="@drawable/ic_us"
         app:cnb_backgroundColor="@color/colorPrimary"
