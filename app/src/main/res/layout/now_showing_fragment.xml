@@ -7,14 +7,31 @@
     android:background="#A5D6A7">
 
     <ImageView
-        android:id="@+id/header"
-        android:layout_width="match_parent"
+        android:id="@+id/now_play_bg"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:src="@drawable/nowplay_header"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.15"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/header" />
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="15dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/nowplay_header"
+        app:layout_constraintBottom_toBottomOf="@+id/now_play_bg"
+        app:layout_constraintEnd_toEndOf="@+id/now_play_bg"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="@+id/now_play_bg"
+        app:layout_constraintTop_toTopOf="@+id/now_play_bg" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/loopinfo"
@@ -28,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header">
+        app:layout_constraintTop_toBottomOf="@+id/now_play_bg">
 
     </androidx.recyclerview.widget.RecyclerView>
 

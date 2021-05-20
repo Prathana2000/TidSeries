@@ -9,22 +9,30 @@
     android:orientation="vertical"
     android:visibility="visible">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
         android:gravity="center"
         android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.8"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5">
+        app:layout_constraintTop_toBottomOf="@+id/trailer_header">
 
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:id="@+id/youtube_player_view1"
-            android:layout_width="323dp"
-            android:layout_height="172dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
 
             app:autoPlay="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.33"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:showFullScreenButton="false"
             app:videoId="WYAMLoLOVYI">
 
@@ -33,10 +41,15 @@
 
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:id="@+id/youtube_player_view2"
-            android:layout_width="322dp"
-            android:layout_height="166dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
 
             app:autoPlay="false"
+            app:layout_constraintBottom_toTopOf="@+id/youtube_player_view3"
+            app:layout_constraintEnd_toEndOf="@+id/youtube_player_view1"
+            app:layout_constraintHeight_percent="0.33"
+            app:layout_constraintStart_toStartOf="@+id/youtube_player_view1"
+            app:layout_constraintTop_toBottomOf="@+id/youtube_player_view1"
             app:showFullScreenButton="false"
             app:videoId="sdo8HDPgc04">
 
@@ -44,23 +57,28 @@
 
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:id="@+id/youtube_player_view3"
-            android:layout_width="317dp"
-            android:layout_height="171dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
 
             app:autoPlay="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/youtube_player_view2"
+            app:layout_constraintHeight_percent="0.33"
+            app:layout_constraintStart_toStartOf="@+id/youtube_player_view2"
             app:showFullScreenButton="false"
             app:videoId="0dOFZvitwhM">
 
         </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/trailer_bg"
         android:layout_width="0dp"
-        android:layout_height="108dp"
+        android:layout_height="0dp"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/header" />
@@ -69,14 +87,15 @@
         android:id="@+id/trailer_header"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="15dp"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
-        app:layout_constraintEnd_toEndOf="@+id/imageView5"
-        app:layout_constraintStart_toStartOf="@+id/imageView5"
-        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintBottom_toBottomOf="@+id/trailer_bg"
+        app:layout_constraintEnd_toEndOf="@+id/trailer_bg"
+        app:layout_constraintStart_toStartOf="@+id/trailer_bg"
+        app:layout_constraintTop_toTopOf="@+id/trailer_bg"
         app:srcCompat="@drawable/title_main" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
