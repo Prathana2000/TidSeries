@@ -12,23 +12,25 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class Fav_Fragment extends Fragment {
+public class Trailer_Fragment extends Fragment {
 
-    private FavViewModel mViewModel;
+    private TrailerViewModel mViewModel;
 
-    public static Fav_Fragment newInstance() { return new Fav_Fragment();
+    public static Trailer_Fragment newInstance() { return new Trailer_Fragment();
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fav_fragment, container, false);
+        return inflater.inflate(R.layout.trailer_fragment, container, false);
     }
+
+
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(FavViewModel.class);
+        mViewModel = new ViewModelProvider(this).get(TrailerViewModel.class);
         // TODO: Use the ViewModel
     }
 

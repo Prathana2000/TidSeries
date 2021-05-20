@@ -33,4 +33,5 @@ public class DetailActivity extends AppCompatActivity {
         overview_tv.setText(mOverView);
 
     }
+
 }

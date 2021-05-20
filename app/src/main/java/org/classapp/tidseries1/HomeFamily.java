@@ -60,7 +60,6 @@ public class HomeFamily extends AppCompatActivity {
 
                         Movie movie = new Movie(title, poster, overview, rating);
                         movieList.add(movie);
-
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
