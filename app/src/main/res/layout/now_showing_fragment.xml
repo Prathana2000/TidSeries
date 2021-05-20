@@ -15,7 +15,7 @@
         app:layout_constraintHeight_percent="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/header" />
+        app:srcCompat="@drawable/nowplaying_bgheader" />
 
     <ImageView
         android:id="@+id/header"
@@ -31,7 +31,8 @@
         app:layout_constraintEnd_toEndOf="@+id/now_play_bg"
         app:layout_constraintHeight_percent="0.15"
         app:layout_constraintStart_toStartOf="@+id/now_play_bg"
-        app:layout_constraintTop_toTopOf="@+id/now_play_bg" />
+        app:layout_constraintTop_toTopOf="@+id/now_play_bg"
+        app:srcCompat="@drawable/now_playing" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/loopinfo"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFCCBC">
+    android:background="@color/cream">
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView2"
@@ -113,20 +113,20 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/header" />
+        app:srcCompat="@drawable/bg_hf" />
 
     <ImageView
         android:id="@+id/headerText"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="20dp"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="@+id/header"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/title_main" />
+        app:srcCompat="@drawable/header_hfragment" />
 
     <ImageView
         android:id="@+id/footer"
@@ -136,7 +136,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/footer_homef" />
+        app:srcCompat="@drawable/footer_slidebar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

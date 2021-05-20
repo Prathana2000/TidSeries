@@ -81,7 +81,7 @@
         app:layout_constraintHeight_percent="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/header" />
+        app:srcCompat="@drawable/trailer_bgheader" />
 
     <ImageView
         android:id="@+id/trailer_header"
@@ -96,6 +96,6 @@
         app:layout_constraintEnd_toEndOf="@+id/trailer_bg"
         app:layout_constraintStart_toStartOf="@+id/trailer_bg"
         app:layout_constraintTop_toTopOf="@+id/trailer_bg"
-        app:srcCompat="@drawable/title_main" />
+        app:srcCompat="@drawable/movie_trailer" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
