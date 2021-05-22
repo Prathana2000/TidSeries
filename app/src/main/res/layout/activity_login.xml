@@ -117,7 +117,7 @@
             android:id="@+id/main_btn_signin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sing Up"
+            android:text="Sign Up"
             android:textColor="@color/orage"
             android:textSize="18sp"
             android:textStyle="bold"
