@@ -9,7 +9,7 @@
 
     <View
         android:id="@+id/view1_signup"
-        android:layout_width="413dp"
+        android:layout_width="0dp"
         android:layout_height="170dp"
         android:background="@color/basilgreen"
         app:layout_constraintEnd_toEndOf="parent"
