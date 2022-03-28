@@ -1,2 +1,2 @@
 # TidSeries
-Android Project Java
+ Project android studio CP316
